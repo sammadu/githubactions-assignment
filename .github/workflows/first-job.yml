@@ -35,6 +35,9 @@ jobs:
       - name: Run LTI
         run: npm run test
 
+      - name: Build the project
+        run: npm run build
+
   deploy: 
     needs: test
     runs-on: ubuntu-latest
